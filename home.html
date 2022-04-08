@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+<body style="background: url(https://i.imgur.com/uTjshqe.png);
+  background-repeat: no-repeat;
+  style="max-width:100%;height:auto;">
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "334b042d-06df-4be2-acc1-c29ab90cda5b", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "f3b8eaed-d934-4bad-aad8-b884bb58e3b2", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
